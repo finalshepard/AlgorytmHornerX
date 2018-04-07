@@ -37,7 +37,10 @@ public class Pierwiastek {
     void podaj_liczbe()     //proba z floatem
     {
         do {
+            if(p>0)
             System.out.println("Podaj liczbę przed x o potędze " + p);
+            if(p==0)
+                System.out.println("Podaj liczbe bez x w wielomianie");
             Scanner elo = new Scanner(System.in);
             if(elo.hasNextFloat())
             {
